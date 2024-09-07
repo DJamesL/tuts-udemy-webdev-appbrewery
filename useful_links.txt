@@ -1,2 +1,72 @@
 https://www.lipsum.com/ 
 https://www.diffchecker.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/#heading-flex-grow-shrink-wrap-basis-properties
+
+https://appbrewery.github.io/flex-layout/
+https://appbrewery.github.io/flexboxfroggy/
+https://appbrewery.github.io/flexbox-sizing-exercise/
+https://appbrewery.github.io/grid-sizing/
+https://appbrewery.github.io/gridgarden/
+
+https://getbootstrap.com/
+https://www.w3schools.com/bootstrap/bootstrap_templates.asp
+
+https://color.adobe.com/create/color-wheel
+https://www.dailyui.co/
+
+
+https://appbrewery.github.io/bootstrap-layout/
+///////////////////////////////////////
+<!-- Modify the HTML code for the purple boxes below so it behaves like the green ones. -->
+  <div class="row">
+    <div class="col-md-12 col-xl-6">50% desktop, 100% mobile</div>
+    <div class="col-md-12 col-xl-6">50% desktop, 100% mobile</div>
+  </div>
+
+  <!-- Modify the HTML below to make the blue boxes behave like the red ones. -->
+  <div class="row">
+    <div class="col-10 col-sm-12 col-lg-6">Column 1</div>
+    <div class="col-10 col-sm-6 col-lg-3 col-xl-3">Column 2</div>
+    <div class="col-10 col-sm-6 col-lg-3 col-xl-3">Column 3</div>
+  </div>
+
+      <!-- Modify the HTML below to make the indigo boxes behave like the blue ones. -->
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-lg-4 col-xl-2 col-xxl-1 ">Column 1</div>
+        <div class="col">Column 2</div>
+      </div>
+
+//////////////////////////////////////
+
+
+.container {
+  justify-content: space-between
+}
+  
+.container > * {
+
+}
+
+.item1 {
+ flex-basis: 200px
+}
+
+.item2 {
+ flex-basis: 200px
+ flex-shrink: 0
+}
+
+.item3 {
+ flex-basis: 400px
+ flex-shrink: 0
+}
+
+/////////////////
+.grid-container {
+ display: grid;
+ grid-template-columns: auto 400px minmax(200px, 500px);
+ grid-template-rows: 1fr 1fr 2fr;
+ grid-auto-rows: 50px;
+}
+//////////////

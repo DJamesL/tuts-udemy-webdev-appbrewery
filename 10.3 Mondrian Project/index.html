@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .flexcont{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .gridcontainter{
+      background-color: #F0F1EC;
+      /* height: 748x;
+      width: 748px; */
+      display: grid;
+      grid-template-columns: repeat(748, 1px);
+      grid-template-rows: repeat(748, 1px);
+      outline: black solid 1px;
+    }
+
+    .red{
+      background-color: #E72F24;
+      grid-column-start: 1;
+      grid-column-end: 320;
+      grid-row-start: 1;
+      grid-row-end: 414;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+      grid-column-start: 329;
+      grid-column-end: calc(329 + 198);
+      grid-row-start: calc(423 + 130 + 10 + 155 + 9);
+      grid-row-end: calc(423 + 130 + 10 + 155 + 9 + 20);
+    }
+
+    .blue{
+      background-color: #004592;
+      grid-column-start: calc(748 - 50);
+      grid-column-end: 748;
+      grid-row-start: calc(9 + 414);
+      grid-row-end: calc(9 + 414 + 130);
+    }
+
+    .black{
+      background-color: #232629;
+      grid-column-start: calc(329 + 198 + 9);
+      grid-column-end: calc(329 + 198 + 9 + 153);
+      grid-row-start: calc(423 + 130 + 10 + 155 + 9);
+      grid-row-end: calc(423 + 130 + 10 + 155 + 9 + 20);
+    }
+
+    .line{
+      background-color: #000;
+    }
+
+    .line1{
+      order: 1;
+      grid-column-start: 320;
+      grid-column-end: 329;
+      grid-row-start: 1;
+      grid-row-end: 747;
+    }
+
+    .line2{
+      order: 1;
+      grid-column-start: 1;
+      grid-column-end: 748;
+      grid-row-start: 414;
+      grid-row-end: calc(9 + 414);
+    }
+
+    .line3{
+      order: 1;
+      grid-column-start: 1;
+      grid-column-end: calc(748 - 50);
+      grid-row-start: calc(423 + 130 + 10 + 155);
+      grid-row-end: calc(423 + 130 + 10 + 155 + 9);
+    }
+
+    .line4{
+      order: 1;
+      grid-column-start: calc(748 - 50 - 9);
+      grid-column-end: calc(748 - 50);
+      grid-row-start: calc(9 + 414);
+      grid-row-end: calc(423 + 130 + 10 + 155 + 9 + 20);
+    }
+
+    .line5{
+      order: 1;
+      grid-column-start: calc(748 - 50);
+      grid-column-end: 748;
+      grid-row-start: calc(9 + 414 + 130);
+      grid-row-end: calc(9 + 414 + 130 + 50);
+    }
+
+    .line6{
+      order: 1;
+      grid-column-start: calc(329 + 198);
+      grid-column-end: calc(329 + 198 + 9);
+      grid-row-start: calc(423 + 130 + 10 + 155 + 9);
+      grid-row-end: calc(423 + 130 + 10 + 155 + 9 + 20);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="flexcont">
+    <div class="gridcontainter">
+      <div class="item red"></div>
+      <div class="item yellow"></div>
+      <div class="item blue"></div>
+      <div class="item black"></div>
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+      <div class="line line4"></div>
+      <div class="line line5"></div>
+      <div class="line line6"></div>
+     </div>
+   </div>
+
+</body>
+
+</html>
